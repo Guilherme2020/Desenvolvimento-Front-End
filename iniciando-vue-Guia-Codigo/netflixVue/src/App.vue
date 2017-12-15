@@ -2,7 +2,7 @@
   <div class="contain">
     <div class="slider">
       <h3>Ação</h3>
-      <span class="handle handlePrev active">
+      <span  v-on:mouseover="scrollEsquerda()" v-on:mouseout="clearScroll()" class="handle handlePrev active">
         <i class="fa fa-caret-left" aria-hidden="true"></i>
       </span>
 
@@ -48,10 +48,41 @@
                 </div>
               </div>
             </div>
+            <div class="gui-card">
+              <div class="gui-card__media">
+                <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+              </div>
+              <div class="gui-card__details">
+                <div class="gui-card__title">
+                  Assassin’s Creed
+                </div>
+              </div>
+            </div>
+            <div class="gui-card">
+              <div class="gui-card__media">
+                <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+              </div>
+              <div class="gui-card__details">
+                <div class="gui-card__title">
+                  Assassin’s Creed
+                </div>
+              </div>
+            </div>
+            <div class="gui-card">
+              <div class="gui-card__media">
+                <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+              </div>
+              <div class="gui-card__details">
+                <div class="gui-card__title">
+                  Assassin’s Creed
+                </div>
+              </div>
+            </div>
           </div>
+          
       </div> 
 
-      <span onmouseover="scrollDireita()" onmouseout="clearScroll()" class="handle handleNext">
+      <span v-on:mouseover="scrollDireita()" v-on:mouseout="clearScroll()" class="handle handleNext">
           <i class="fa fa-caret-right" arial-hidden="true"></i>
       </span>
 
@@ -64,12 +95,32 @@
 export default {
   
   
-  name: 'app',
-   data () {
-    return {
-      nomeProjeto: 'NetFlix Com Vue'
+    name: 'app',
+    data () {
+      return {
+        nomeProjeto: 'NetFlix Com Vue',
+        intervalo:null
+
+      }
+    },
+    computed: {
+      
+    },
+    methods:{
+      scrollDireita(){
+        this.intervalo = setInterval(function(){
+          document.getElementById('scroller').scrollLeft += 1 
+        }, 5);
+      },
+      scrollEsquerda(){
+         this.intervalo = setInterval(function(){
+            document.getElementById('scroller').scrollLeft -= 1
+         },5 ); 
+      },
+      clearScroll(){
+          clearInterval(this.intervalo);
+      }
     }
-  }
 }
 </script>
 
