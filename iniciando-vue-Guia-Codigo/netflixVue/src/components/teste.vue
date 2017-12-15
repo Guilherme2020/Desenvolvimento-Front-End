@@ -1,23 +1,13 @@
 <template>
-    <div>
-        <h1>{{titulo}}</h1>
-    </div>
+<h1>{{titulo}}</h1>
 </template>
 
 <script>
 export default {
-    name:'Teste',
     
-    props:['titulo'],
-    
-    data () {
-        return {
-
-        }
-    }
 }
 </script>
 
 <style lang="scss" >
-
+   
 </style>
