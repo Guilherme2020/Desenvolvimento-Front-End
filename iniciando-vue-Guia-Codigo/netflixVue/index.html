@@ -3,9 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Netflix with Vue</title>
+    <style>
+      #app{
+        overflow: hidden;
+        
+      }
+      h1{
+        /* text-align: left; */
+        margin-bottom: -5%;
+        margin-left:6%;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <router-view></router-view>
+    </div>
     <script src="/dist/build.js"></script>
   </body>
 </html>

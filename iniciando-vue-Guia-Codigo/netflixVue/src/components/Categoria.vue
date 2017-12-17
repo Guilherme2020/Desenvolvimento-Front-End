@@ -1,8 +1,6 @@
 <template>
     <div class="slider">
-      <!-- <h3>{{titulo}}</h3> -->
-      <!-- <my-tes titulo="Categoria">
-        </my-tes> -->
+     
       <h1>{{titulo}}</h1>  
       <span  v-on:mouseover="scrollEsquerda()" v-on:mouseout="clearScroll()" class="handle handlePrev active">
         <i class="fa fa-caret-left" aria-hidden="true"></i>
@@ -10,12 +8,8 @@
 
       <div ref="scroller" class="row">
           <div class="row__inner">
-            <Filme titulo="Ação" imagem="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700"></Filme>
-            <Filme titulo="Ação" imagem="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700"></Filme>
-            <Filme titulo="Ação" imagem="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700"></Filme>
-            <Filme titulo="Ação" imagem="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700"></Filme>
-            <Filme titulo="Ação" imagem="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700"></Filme>
-            
+            <filme v-for="filme in filmes"  v-bind:key="filme.id" v-bind:titulo="filme.titulo" v-bind:imagem="filme.imagem"></filme>
+           
           </div>
           
       </div> 
@@ -30,7 +24,7 @@
 <script>
 import Filme from './Filme.vue';
 export default {
-    props:['titulo'],
+    props:['titulo','filmes'],
     components: {
         Filme
     },
@@ -62,7 +56,7 @@ export default {
 </script>
 
 <style lang="scss">
-     h1{
-        color:red;
-    }
+    //  h1{
+    //     color:red;
+    // }
 </style>

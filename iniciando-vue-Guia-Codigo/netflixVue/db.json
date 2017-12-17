@@ -1,0 +1,64 @@
+{
+    "categorias": [
+      {
+        "id":1,
+        "titulo":"Terror",
+        "filmes":[
+          {
+            "id":1,"titulo":"It: A Coisa","imagem":"http://br.web.img2.acsta.net/pictures/17/03/29/07/56/333222.jpg"
+          },
+          {
+            "id":2,"titulo":"It: A Coisa","imagem":"http://br.web.img2.acsta.net/pictures/17/03/29/07/56/333222.jpg"
+          },
+          {
+            "id":3,"titulo":"It: A Coisa","imagem":"http://br.web.img2.acsta.net/pictures/17/03/29/07/56/333222.jpg"
+          },
+          {
+            "id":4,"titulo":"It: A Coisa","imagem":"http://br.web.img2.acsta.net/pictures/17/03/29/07/56/333222.jpg"
+          },
+          {
+            "id":5,"titulo":"It: A Coisa","imagem":"http://br.web.img2.acsta.net/pictures/17/03/29/07/56/333222.jpg"
+          },
+          {
+            "id":6,"titulo":"It: A Coisa","imagem":"http://br.web.img2.acsta.net/pictures/17/03/29/07/56/333222.jpg"
+          },
+          {
+            "id":7,"titulo":"It: A Coisa","imagem":"http://br.web.img2.acsta.net/pictures/17/03/29/07/56/333222.jpg"
+          },
+          {
+            "id":8,"titulo":"It: A Coisa","imagem":"http://br.web.img2.acsta.net/pictures/17/03/29/07/56/333222.jpg"
+          }
+        ]
+      },
+      {
+        "id":2,
+        "titulo":"Comédia",
+        "filmes":[
+          {
+            "id":1,"titulo":"Click","imagem":"https://upload.wikimedia.org/wikipedia/pt/b/bd/Click_film.jpg"
+          },
+          {
+            "id":2,"titulo":"Click","imagem":"https://upload.wikimedia.org/wikipedia/pt/b/bd/Click_film.jpg"
+          },
+          {
+            "id":3,"titulo":"Click","imagem":"https://upload.wikimedia.org/wikipedia/pt/b/bd/Click_film.jpg"
+          },
+          {
+            "id":4,"titulo":"Click","imagem":"https://upload.wikimedia.org/wikipedia/pt/b/bd/Click_film.jpg"
+          },
+          {
+            "id":5,"titulo":"Click","imagem":"https://upload.wikimedia.org/wikipedia/pt/b/bd/Click_film.jpg"
+          },
+          {
+            "id":6,"titulo":"Click","imagem":"https://upload.wikimedia.org/wikipedia/pt/b/bd/Click_film.jpg"
+          },
+          {
+            "id":7,"titulo":"Click","imagem":"https://upload.wikimedia.org/wikipedia/pt/b/bd/Click_film.jpg"
+          },
+          {
+            "id":8,"titulo":"Click","imagem":"https://upload.wikimedia.org/wikipedia/pt/b/bd/Click_film.jpg"
+          }
+        ]
+      }
+    ]
+  }
