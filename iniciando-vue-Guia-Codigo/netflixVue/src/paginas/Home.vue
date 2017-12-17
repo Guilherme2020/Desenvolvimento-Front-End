@@ -1,7 +1,6 @@
 <template>
   <div class="contain">
     <categoria v-for="categoria in categorias" v-bind:key="categoria.id" v-bind:titulo="categoria.titulo" v-bind:filmes="categoria.filmes"></categoria>
-     <br><br>  
         
     <!-- <categoria v-for="categoria in categorias" v-bind:key="categoria.id" v-bind:titulo="categoria.titulo" v-bind:filmes="categoria.filmes"></categoria> -->
 
@@ -89,7 +88,7 @@ p {
 p {
   width: 100%;
   max-width: 500px;
-  // margin: auto;
+  margin: auto;
 }
 a:link,
 a:hover,

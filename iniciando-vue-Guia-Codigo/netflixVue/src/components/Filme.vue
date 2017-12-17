@@ -8,7 +8,6 @@
                 {{titulo}}
                 
             </div>
-            <br><br>
         </div>
     </div>
 
